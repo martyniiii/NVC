@@ -1,0 +1,22 @@
+﻿@model MvcMovie.Models.HelloWorldModel
+
+@{
+    ViewData["Title"] = "Form";
+}
+
+<h1>Formularz</h1>
+
+<form asp-action="Welcome" method="get">
+    <div>
+        <label>Imię:</label>
+        <input type="text" name="name" />
+    </div>
+
+    <div>
+        <label>Ilość powtórzeń:</label>
+        <input type="number" name="numTimes" />
+    </div>
+
+    <br />
+    <button type="submit">Wyślij</button>
+</form>
